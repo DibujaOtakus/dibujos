@@ -36,9 +36,10 @@
             <h3>Meliodas</h3>
             <h3>Autor: Ukufa</h3>
             <div class="imagen">
+                <div class="marco">
                 <img itemprop="image" src="https://i.imgur.com/za6D3gO.png" alt="Meliodas"><br>
+                </div></div>
                 <a href="https://imgur.com/download/za6D3gO">Descargar</a>
-            </div>
         </div>
         <div class="modal" id="arionsherwind">
             <nav>
@@ -50,9 +51,10 @@
             <h3>Arion Sherwind</h3>
             <h3>Autor: Ukufa</h3>
             <div class="imagen">
+                <div class="marco">
                 <img itemprop="image" src="https://i.imgur.com/oOigqht.png" alt="Arion Sherwind"><br>
+                </div></div>
                 <a href="https://imgur.com/download/oOigqht">Descargar</a>
-            </div>
         </div>
         <div class="modal" id="chromedrstone">
             <nav>
@@ -64,9 +66,10 @@
             <h3>Chrome</h3>
             <h3>Autor: Ukufa</h3>
             <div class="imagen">
+                <div class="marco">
                 <img itemprop="image" src="https://i.imgur.com/yBUbFH6.png" alt="Chrome Dr Stone"><br>
+                </div></div>
                 <a href="https://imgur.com/download/yBUbFH6">Descargar</a>
-            </div>
         </div>
         <div class="modal" id="deku">
             <nav>
@@ -78,9 +81,10 @@
             <h3>Deku</h3>
             <h3>Autor: Ukufa</h3>
             <div class="imagen">
+                <div class="marco">
                 <img itemprop="image" src="https://i.imgur.com/Q2Y0quZ.png" alt="Deku"><br>
+                </div></div>
                 <a href="https://imgur.com/download/Q2Y0quZ">Descargar</a>
-            </div>
         </div>
         <div class="modal" id="natsudragneel">
             <nav>
@@ -92,9 +96,11 @@
             <h3>Natsu Dragneel</h3>
             <h3>Autor: Ukufa</h3>
             <div class="imagen">
+                <div class="marco">
                 <img itemprop="image" src="https://i.imgur.com/BagJwzD.png" alt="Natsu Dragneel"><br>
-                <a href="https://imgur.com/download/BagJwzD">Descargar</a>
+                </div>
             </div>
+            <a href="https://imgur.com/download/BagJwzD">Descargar</a>
         </div>
         <div class="modal" id="goku">
             <nav>
@@ -106,9 +112,11 @@
             <h3>Goku</h3>
             <h3>Autor: Ukufa</h3>
             <div class="imagen">
+                <div class="marco">
                 <img itemprop="image" src="https://i.imgur.com/F6waDSu.png" alt="Goku"><br>
-                <a href="https://imgur.com/download/F6waDSu">Descargar</a>
+                </div>
             </div>
+            <a href="https://imgur.com/download/F6waDSu">Descargar</a>
         </div>
         <div class="modal" id="elizabethliones">
             <nav>
@@ -117,18 +125,55 @@
                 </ul>
             </nav>
             <div class="title"><br><br><h1>Otaku<br> Paints</h1></div>
-            <h3>Elizabeth Liones</h3>
-            <h3>Autor: Ukufa</h3>
+            <h3 class="name">Elizabeth Liones</h3><br>
+            <br><h3>Autor: Ukufa</h3>
+            <br>
+            <br>
             <div class="imagen">
+                <div class="marco">
                 <img itemprop="image" src="https://i.imgur.com/N501l2V.png" alt="Elizabeth Liones"><br>
-                <a href="https://imgur.com/download/N501l2V">Descargar</a>
+                </div>
             </div>
+            <a class="descargar" href="https://imgur.com/download/N501l2V">Descargar</a>
         </div>
         <style>
+            
+            .imagen {
+                background-color: palevioletred;
+                max-width: 576px;
+                max-height: 432px;
+                min-width: 576px;
+                min-height: 432px;
+                margin-left: 50px;
+            }
+            
+            .marco {
+                background-color: orange;
+                max-width: 100%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .descargar {
+                float: right;
+                margin-right: 500px;
+                margin-top: 400px;
+                font-family: fuente1;
+                background-color: red;
+                text-decoration: none;
+                font-size: 350%;
+            }
+            .descargar:hover {
+                background-color: crimson
+            }
+            
+            
                     .galeria img:hover {
                 border: 10px;
                 border-color: darkkhaki;
             }
+            
+            
+            
             
             .cerrar {
                 font-family: bold;
@@ -149,13 +194,21 @@
     margin: 0px;
             
 }
+            h2 {
+                margin-top: 200px;
+            }
             
             .modal {
                 background-color: azure;
             }
+   
+            .name {
+                float: left;
+                margin-left: 80px;
+            }
             
 body {
-    background-color: lightcyan;
+    background-color: lightblue;
     max-height: 100%;
     max-width: 100%;
     align-content: center;
@@ -257,7 +310,7 @@ iframe {
 }
 
 h3 {
-	color: #fff;
+	color: black;
 	text-align: center;
     font-size: 300%;
 
@@ -287,6 +340,7 @@ h3 {
 	opacity: 0;
 	position: absolute;
 	right: -100%;
+    float: left;
 }
 
 .modal:target {
@@ -294,7 +348,7 @@ h3 {
 	opacity: 1;
 	transition: all 1s;
 	position: fixed;
-	background-color: aquamarine;
+	background-color: lightcyan;
 	top:0;
 	left:0;
 	width: 100%;
@@ -309,10 +363,12 @@ h3 {
 }
 
 .imagen {
-	width:100%; 
-	height:80%;
+	width:60%; 
+	height:40%;
 	object-fit: contain;
     float: left;
+    padding: 0;
+    border: 0px;
 }
 .imagen a {
 	color: #fff;
